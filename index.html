@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <header>
 <!--navbar-->
 <nav class="navbar navbar-expand-md bg-body-tertiary">
-    <div class="container">
+    <div class="container-fluid justify-content-end">
         <a class="navbar-brand" href="#">
-            <img src="img/slogo.svg" alt="logo" width="30" height="24">
-            Swallow
+            <img src="img/logo1.svg" alt="logo" width="30" height="24">
+            <span class="fw-bold">Swallow-Bird</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,7 +29,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Facts</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,8 +52,35 @@
         </div>
     </div>
 </nav>
-</header>
+    <div class="position-relative text-end text-white p-3 main">
+    <h1>Welcome to the fascinating<br>world of the swallow bird.</h1>
+        <p class="hero">Discover myths, facts, and beauty of <br>these incredible creatures.</p>
+        <audio id="player">
+            <source src="mp3/swallow-in-an-alley-56133.mp3" type="audio/mpeg">
+        </audio>
+        <div class="audio-controls">
+            <button onclick="document.getElementById('player').play()">Play</button>
+            <button onclick="document.getElementById('player').pause()">Pause</button>
+        </div>
+    </div>
 
+
+</header>
+<main>
+    <div class="container my-5">
+    <h3>Description</h3>
+        <p>The Hirundinidae have an evolutionarily conservative body shape, which is similar across the clade, but is unlike that of other passerines. Swallows have adapted to hunting insects on the wing by developing a slender, streamlined body and long, pointed wings, which allow great maneuverability and endurance, as well as frequent periods of gliding. Their body shapes allow for very efficient flight; the metabolic rate of swallows in flight is 49–72% lower than equivalent passerines of the same size.</p>
+        <p>Swallows have two foveae in each eye, giving them sharp lateral and frontal vision to help track prey. They also have relatively long eyes, with their length almost equaling their width. The long eyes allow for an increase in visual acuity without competing with the brain for space inside the head. The morphology of the eye in swallows is similar to that of a raptor.</p>
+        <p>Like the unrelated swifts and nightjars, which hunt in a similar way, they have short bills, but strong jaws and a wide gape. Their body lengths range from about 10–24 cm (3.9–9.4 in) and their weight from about 10–60 g (0.35–2.12 oz). The smallest species by weight may be the Fanti sawwing, at a mean body mass of 9.4 g (0.33 oz) while the purple martin and southern martin, which both weigh in excess of 50 g (1.8 oz) on average, rival one another as the heaviest swallows. The wings are long, pointed, and have nine primary feathers. The tail has 12 feathers and may be deeply forked, somewhat indented, or square-ended. A long tail increases maneuverability, and may also function as a sexual adornment, since the tail is frequently longer in males.[20] In barn swallows, the tail of the male is 18% longer than those of the female, and females select mates on the basis of tail length.</p>
+        <p>Their legs are short, and their feet are adapted for perching rather than walking, as the front toes are partially joined at the base. Swallows are capable of walking and even running, but they do so with a shuffling, waddling gait.[22] The leg muscles of the river martins (Pseudochelidon) are stronger and more robust than those of other swallows.[11][22] The river martins have other characteristics that separate them from the other swallows. The structure of the syrinx is substantially different between the two subfamilies;[9] and in most swallows, the bill, legs, and feet are dark brown or black, but in the river martins, the bill is orange-red and the legs and feet are pink.</p>
+        <p>The most common hirundine plumage is glossy dark blue or green above and plain or streaked underparts, often white or rufous. Species that burrow or live in dry or mountainous areas are often matte brown above (e.g. sand martin and crag martin). The sexes show limited or no sexual dimorphism, with longer outer tail feathers in the adult male probably being the most common distinction.</p>
+        <p>The chicks hatch naked and with closed eyes. Fledged juveniles usually appear as duller versions of the adult.</p>
+    </div>
+</main>
+
+<footer>
+
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
