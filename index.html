@@ -6,80 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Swallow-Index</title>
 </head>
 <body>
 <header>
 <!--navbar-->
-<nav class="navbar navbar-expand-md bg-body-tertiary">
-    <div class="container-fluid justify-content-end">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo1.svg" alt="logo" width="30" height="24">
-            <span class="fw-bold">Swallow-Bird</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Facts</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Tales
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Mythology</a></li>
-                        <li><a class="dropdown-item" href="#">Legend</a></li>
-                        <li><a class="dropdown-item" href="#">Symbolize</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Gallery</a>
-                </li>
-            </ul>
-            <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2 w-75" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo1.svg" alt="logo" width="30" height="24">
+                <span class="fw-bold">Swallow-Bird</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#description">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fact">Facts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tales
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Mythology</a></li>
+                            <li><a class="dropdown-item" href="#">Legend</a></li>
+                            <li><a class="dropdown-item" href="#">Symbolize</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2 w-75" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
         </div>
-    </div>
-</nav>
-    <div class="position-relative text-end text-white p-3 main">
-    <h1>Welcome to the fascinating<br>world of the swallow bird.</h1>
-        <p class="hero">Discover myths, facts, and beauty of <br>these incredible creatures.</p>
+    </nav>
+
+    <div class="container position-relative text-end text-white p-3 main">
+    <h1 class>Welcome to the world<br>of the swallow bird.</h1>
+        <p class="hero">Discover these incredible<br>and beautiful creatures.</p>
         <audio id="player">
             <source src="mp3/swallow-in-an-alley-56133.mp3" type="audio/mpeg">
         </audio>
-        <div class="audio-controls">
-            <button onclick="document.getElementById('player').play()">Play</button>
-            <button onclick="document.getElementById('player').pause()">Pause</button>
+        <div class="audio-controls text-start p-2 p-md-3 p-lg-4">
+            <h4 class="px-1">Listen my beautiful sound!</h4>
+            <button class="btn btn-outline-success btn-light w-100 my-1" onclick="document.getElementById('player').play()">Play</button>
+            <button class="btn btn-outline-success btn-light w-100 my-1" onclick="document.getElementById('player').pause()">Pause</button>
         </div>
     </div>
 
 
 </header>
 <main>
-    <div class="container my-5">
-    <h3>Description</h3>
+    <div class="container my-0 bg-white p-5 rounded">
+        <div class="description" id="description">
+        <h3>Description</h3>
         <p>The Hirundinidae have an evolutionarily conservative body shape, which is similar across the clade, but is unlike that of other passerines. Swallows have adapted to hunting insects on the wing by developing a slender, streamlined body and long, pointed wings, which allow great maneuverability and endurance, as well as frequent periods of gliding. Their body shapes allow for very efficient flight; the metabolic rate of swallows in flight is 49–72% lower than equivalent passerines of the same size.</p>
         <p>Swallows have two foveae in each eye, giving them sharp lateral and frontal vision to help track prey. They also have relatively long eyes, with their length almost equaling their width. The long eyes allow for an increase in visual acuity without competing with the brain for space inside the head. The morphology of the eye in swallows is similar to that of a raptor.</p>
-        <p>Like the unrelated swifts and nightjars, which hunt in a similar way, they have short bills, but strong jaws and a wide gape. Their body lengths range from about 10–24 cm (3.9–9.4 in) and their weight from about 10–60 g (0.35–2.12 oz). The smallest species by weight may be the Fanti sawwing, at a mean body mass of 9.4 g (0.33 oz) while the purple martin and southern martin, which both weigh in excess of 50 g (1.8 oz) on average, rival one another as the heaviest swallows. The wings are long, pointed, and have nine primary feathers. The tail has 12 feathers and may be deeply forked, somewhat indented, or square-ended. A long tail increases maneuverability, and may also function as a sexual adornment, since the tail is frequently longer in males.[20] In barn swallows, the tail of the male is 18% longer than those of the female, and females select mates on the basis of tail length.</p>
-        <p>Their legs are short, and their feet are adapted for perching rather than walking, as the front toes are partially joined at the base. Swallows are capable of walking and even running, but they do so with a shuffling, waddling gait.[22] The leg muscles of the river martins (Pseudochelidon) are stronger and more robust than those of other swallows.[11][22] The river martins have other characteristics that separate them from the other swallows. The structure of the syrinx is substantially different between the two subfamilies;[9] and in most swallows, the bill, legs, and feet are dark brown or black, but in the river martins, the bill is orange-red and the legs and feet are pink.</p>
+        <p>Like the unrelated swifts and nightjars, which hunt in a similar way, they have short bills, but strong jaws and a wide gape. Their body lengths range from about 10–24 cm (3.9–9.4 in) and their weight from about 10–60 g (0.35–2.12 oz). The smallest species by weight may be the Fanti sawwing, at a mean body mass of 9.4 g (0.33 oz) while the purple martin and southern martin, which both weigh in excess of 50 g (1.8 oz) on average, rival one another as the heaviest swallows. The wings are long, pointed, and have nine primary feathers. The tail has 12 feathers and may be deeply forked, somewhat indented, or square-ended. A long tail increases maneuverability, and may also function as a sexual adornment, since the tail is frequently longer in males. In barn swallows, the tail of the male is 18% longer than those of the female, and females select mates on the basis of tail length.</p>
+        <p>Their legs are short, and their feet are adapted for perching rather than walking, as the front toes are partially joined at the base. Swallows are capable of walking and even running, but they do so with a shuffling, waddling gait. The leg muscles of the river martins (Pseudochelidon) are stronger and more robust than those of other swallows. The river martins have other characteristics that separate them from the other swallows. The structure of the syrinx is substantially different between the two subfamilies; and in most swallows, the bill, legs, and feet are dark brown or black, but in the river martins, the bill is orange-red and the legs and feet are pink.</p>
         <p>The most common hirundine plumage is glossy dark blue or green above and plain or streaked underparts, often white or rufous. Species that burrow or live in dry or mountainous areas are often matte brown above (e.g. sand martin and crag martin). The sexes show limited or no sexual dimorphism, with longer outer tail feathers in the adult male probably being the most common distinction.</p>
         <p>The chicks hatch naked and with closed eyes. Fledged juveniles usually appear as duller versions of the adult.</p>
+        </div>
+
+        <div class="fact my-5" id="fact">
+            <h3>Facts</h3>
+            <ul>
+                <li><b>Masters of Flight</b>
+                    - Swallows, martins, and saw-wings are known for their exceptional flying skills. They have streamlined bodies, long pointed wings, and short bills, all of which enable them to perform acrobatic maneuvers in the air. These adaptations are crucial for catching insects while flying.
+                </li>
+                <li><b>Long-Distance Migrants</b>
+                    - Many species within this family are long-distance migrants. For example, the Barn Swallow, one of the most widespread species of swallow globally, migrates from northern breeding grounds in Europe and North America to wintering areas in Central and South America and southern Africa, covering thousands of miles in their yearly migrations.
+                </li>
+                <li><b>Global Distribution</b>
+                    - Swallows are found almost everywhere in the world (making them cosmopolitan), from the Arctic to the tip of South America. Different species have adapted to a wide range of habitats, including open countryside, wetlands, and even urban areas.
+                </li>
+                <li><b>Muddy Nesting Habits</b>
+                    - Swallows and martins have diverse nesting habits, and a lot of them involve mud or dirt. While many species construct mud nests on man-made structures or natural sites like cliffs, others, like the Bank Swallow (or Sand Martin), excavate tunnels in sandy banks or cliffs. The intricacy of their nests and the communal nesting habits of some species, like the Purple Martin, showcase their complex social structures and adaptability.
+                </li>
+                <li><b>Communication and Social Behavior</b>
+                    - Swallows tend to be very social and often form large flocks during migration and in their wintering grounds. They communicate with a wide range of vocalizations and songs, which play a role in social cohesion, territory defense, and mating.
+                </li>
+            </ul>
+        </div>
     </div>
 </main>
 
-<footer>
-
+<footer class="bg-dark text-light mt-auto py-3 text-center">
+    <p>Copyright © 2025. JANEPHOP</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

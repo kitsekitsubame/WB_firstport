@@ -1,8 +1,16 @@
 .main {
-    background: url(img/cover.jpg)no-repeat;
+    background: url(img/cover.jpg)no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+}
+
+body {
+    background-color: #d3ffab;
+}
+
+h1 {
+    font-size: 4.5rem;
 }
 
 .audio-controls {
@@ -11,11 +19,67 @@
     left: 10px;
 }
 
-
-h1 {
-    font-size: 4.5rem;
-}
-
 .hero {
     font-size: 3rem;
+}
+
+/*mobile*/
+
+@media (max-width: 768px) {
+    .main {
+        position: relative;
+        height: auto;
+        min-height: 50vh;
+        padding: 20px;
+        text-align: center;
+        background: url(img/cover.jpg) no-repeat center/cover;
+    }
+
+    .main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+    }
+
+    .main * {
+        position: relative;
+        z-index: 2;
+    }
+
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        font-size: 1.5rem;
+    }
+
+    h1 , .hero {
+        text-align: center;
+        color: black;
+    }
+
+    .audio-controls {
+        position: static;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
 }
